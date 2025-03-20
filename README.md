@@ -9,7 +9,7 @@ A Natural Language Processing (NLP)- based Auto-suggestion-and-Autocorrection-Sy
 ## Installation
 **Clone the repository**
 ```bash
-git clone https://github.com/Yasmeen-coder/Auto-suggestion-and-Autocorrection-System.git
+git clone https://github.com/YasmeenShaik-Tech/Auto-suggestion-and-Autocorrection-System.git
 
 1. Create a virtual environment (Recommended)
 
