@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Autocorrect System</title>
+    <style>
+        /* Load Custom Font */
+        @font-face {
+            font-family: 'Gagalin';
+            src: url('/static/Gagalin-Regular.ttf') format('truetype');
+        }
+
+        /* Background Styling */
+        body {
+            background: linear-gradient(to right, #a1e5a1, #c7e8c7);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Heading Styling */
+        h1 {
+            font-family: 'Gagalin', sans-serif;
+            color: #7886C7;
+            font-size: 28px;
+        }
+
+        /* Form Styling */
+        label {
+            font-family: cursive;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #2980b9;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background: #2c3e50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AutoSuggest and Autocorrect System</h1>
+        <form method="POST" action="/suggest">
+            <label for="keyword">Enter a word:</label>
+            <input type="text" id="keyword" name="keyword" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="suggestions">
+            {% if suggestions %}
+            <table>
+                <thead>
+                    <tr>
+                        <th>Suggested Word</th>
+                        <th>Similarity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for suggestion in suggestions %}
+                    <tr>
+                        <td>{{ suggestion['Word'] }}</td>
+                        <td>{{ suggestion['Similarity'] }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
