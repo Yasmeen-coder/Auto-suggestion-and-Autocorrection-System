@@ -2,7 +2,7 @@
 A Natural Language Processing (NLP)- based Auto-suggestion-and-Autocorrection-System built using Flask. This application intelligently suggests words based on similarity scores and corrects misspellings in real-time. It leverages string-machine techniques, NLP models, and phonetic algorithms to enhance text input accuracy.
 
 ## Features
-- Auto-suggst words based on user input.
+- Auto-suggest words based on user input.
 - Users Flask for backend processing.
 - Displays suggestions with similarity scores.
 
