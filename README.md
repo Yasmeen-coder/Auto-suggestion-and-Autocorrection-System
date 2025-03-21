@@ -25,3 +25,6 @@ pip install -r requirements.txt
 flask run
 
 cd Auto-suggestion-and-Autocorrection-System
+
+```
+https://github.com/user-attachments/assets/0176dbfa-0836-4ba5-88c1-c8ced482795d
