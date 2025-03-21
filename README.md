@@ -10,6 +10,7 @@ A Natural Language Processing (NLP)- based Auto-suggestion-and-Autocorrection-Sy
 **Clone the repository**
 ```bash
 git clone https://github.com/YasmeenShaik-Tech/Auto-suggestion-and-Autocorrection-System.git
+cd Auto-suggestion-and-Autocorrection-System
 
 1. Create a virtual environment (Recommended)
 
@@ -23,8 +24,6 @@ pip install -r requirements.txt
 3. Run the application
 
 flask run
-
-cd Auto-suggestion-and-Autocorrection-System
 
 ```
 https://github.com/user-attachments/assets/0176dbfa-0836-4ba5-88c1-c8ced482795d
